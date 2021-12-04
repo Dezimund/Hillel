@@ -1,4 +1,6 @@
-
+/*Given 2 variables a and b.
+Output them to the console.
+Swap the values of the variables so that the variable a contains the value from the variable b and the variable b contains the value from the variable a. */
 
 
 package com.hillel.homework.homework2;
@@ -16,6 +18,7 @@ public class Main {
 
         System.out.printf("\na : %.2f\n", a);
         System.out.printf("b : %.2f\n", b);
+        // Some C vibes
 
 
         a += b;
