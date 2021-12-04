@@ -1,3 +1,4 @@
+// Create two variables with the latitude and longitude of your current location, or the location of any point of interest in the world
 package com.hillel.homework.homework1;
 
 public class Main {
