@@ -14,11 +14,14 @@ public class task4 {
         double part3 = 0.2;
         double densityRatio = 0.7;
 
+        double size1 = 4 / 3 * Math.PI * Math.pow(part1, 3);
+        double size2 = 4 / 3 * Math.PI * Math.pow(part2, 3);
+        double size3 = 4 / 3 * Math.PI * Math.pow(part3, 3);
 
 
-        double weigh = (part1 + part2 + part3) * densityRatio;
+        double weigh = (size1 + size2 + size3) * densityRatio;
         System.out.println("----------------------------------");
-        System.out.printf("\nSnowman weigh : %.2f kilo\n",weigh);
+        System.out.printf("\nSnowman weigh : %.2f kilo\n", weigh);
         System.out.println("\n----------------------------------");
 
 
