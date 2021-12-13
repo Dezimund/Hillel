@@ -16,11 +16,14 @@ public class task8 {
         System.out.println("Input width");
         int width = Integer.parseInt(reader.readLine());
 
-        if (height > 53 && width > 22 && length > 55){
-            System.out.println("Not suitable for carry-on luggage\n");
+        if (height <= 53 && width <= 22 && length <= 40){
+            System.out.println("Your luggage fits your carry-on baggage");
+        }
+        else if (height <= 40 && width <= 20 && length <= 55){
+            System.out.println("Your luggage fits your carry-on baggage");
         }
         else {
-            System.out.println("Your luggage fits your carry-on baggage");
+            System.out.println("Not suitable for carry-on luggage");
         }
     }
 }
