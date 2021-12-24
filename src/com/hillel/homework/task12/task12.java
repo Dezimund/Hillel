@@ -7,9 +7,13 @@ public class task12 {
 
         for (int i = 0; i < 100; i++) {
 
-            if (i % 10 == 4 || i % 100 == 4) {
+            if (i / 10 == 4) {
                 continue;
-            } else if (i % 10 == 9 || i % 100 == 9) {
+            } else if (i / 10 == 9) {
+                continue;
+            } else if (i % 10 == 4) {
+                continue;
+            } else if (i % 10 == 9) {
                 continue;
             } else {
                 System.out.println(i);
