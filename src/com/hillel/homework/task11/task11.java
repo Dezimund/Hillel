@@ -1,12 +1,16 @@
+/* 
+Given 3 random numbers. Display the minimum.
+*/
+
 package com.hillel.homework.task11;
 
 public class task11 {
     public static void main(String[] args) {
 
 
-        double a = (double) (Math.random()*(600+1)) - 200;
-        double b = (double) (Math.random()*(600+1)) - 200;
-        double c = (double) (Math.random()*(600+1)) - 200;
+        double a = (Math.random()*(600+1)) - 200;
+        double b = (Math.random()*(600+1)) - 200;
+        double c = (Math.random()*(600+1)) - 200;
 
         System.out.printf("Number a : %f\n",a);
         System.out.printf("Number b : %f\n",b);
@@ -21,6 +25,15 @@ public class task11 {
         }
         else if (c<a && c<b){
             System.out.printf("Min : %f",c);
+        }
+        else if (c == a && c > b && a > b){
+            System.out.printf("Min : %f",b);
+        }
+        else if (b == a && b > c && a > c){
+            System.out.printf("Min : %f",c);
+        }
+        else if (b == c && c > a && b > a){
+            System.out.printf("Min : %f",a);
         }
         else {
             System.out.println("Numbers the same one");
