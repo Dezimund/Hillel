@@ -1,4 +1,4 @@
-package com.hillel.homework.task19;
+package homework.task19;
 
 import java.io.BufferedReader;
 import java.io.IOException;
